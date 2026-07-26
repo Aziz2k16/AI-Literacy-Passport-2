@@ -1,6 +1,6 @@
 # 🛂 AI Literacy Passport
 
-> **The "Duolingo for AI Literacy"** — A gamified, interactive web application that empowers anyone to understand how AI works, master prompt engineering, spot hallucinations, and build practical AI skills.
+> **AI Literacy Passport** — A gamified, interactive web application that empowers anyone to understand how AI works, master prompt engineering, spot hallucinations, and build practical AI skills.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-ai--literacy--passport--2.vercel.app-blueviolet?style=for-the-badge&logo=vercel)](https://ai-literacy-passport-2.vercel.app/prompt-coach)
 [![Gemini Powered](https://img.shields.io/badge/AI%20Engine-Google%20Gemini%20API-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
