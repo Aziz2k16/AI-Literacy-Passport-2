@@ -115,64 +115,21 @@
 │   └── index.css                   # Global Tailwind CSS imports & custom styles
 └── vite.config.ts            # Vite configuration
 ```
-
-## 📸 Application Screenshots
-
-### 🏠 Landing Page
-The landing page introduces the AI Literacy Passport platform, highlighting its mission, key features, and a call-to-action for new learners to begin their AI literacy journey.
-
-![Landing Page](./screenshots/7-Main.png)
-
+Screenshots
 ---
+<img width="1920" height="1080" alt="1- Prompt Coach" src="https://github.com/user-attachments/assets/0aba0a0e-bfcb-41e6-80be-fd835ac4aed7" />
 
-### 📚 Learning Dashboard
-The main dashboard displays the learner's daily challenge, AI learning path, progress tracking, and quick access to lessons.
+<img width="1920" height="1080" alt="2- Passport" src="https://github.com/user-attachments/assets/678f0440-6309-45ab-a872-547e033ff0b2" />
 
-![Learning Dashboard](./screenshots/3-Main.png)
+<img width="1920" height="1080" alt="3-Main" src="https://github.com/user-attachments/assets/59e92a39-9d74-4ecd-bf6a-03119ad17432" />
 
----
+<img width="1920" height="1080" alt="4-Gold League" src="https://github.com/user-attachments/assets/32b5fba1-0a74-49c0-a328-09422226d4db" />
 
-### 🤖 AI Prompt Coach
-The Prompt Coach helps users improve prompts using the Gemini API by providing clarity, specificity, context analysis, and an improved prompt suggestion.
+<img width="1920" height="1080" alt="5- Quiz Learning" src="https://github.com/user-attachments/assets/02f0e069-cd06-4574-b494-e42af5b3f52a" />
 
-![AI Prompt Coach](./screenshots/1-Prompt%20Coach.png)
+<img width="1920" height="1080" alt="6- Learning Map" src="https://github.com/user-attachments/assets/35d20684-bbe7-42d6-9678-1efc7876a12c" />
 
----
-
-### 🏆 Weekly League & Leaderboard
-A gamified leaderboard where learners compete weekly, earn XP, and progress through different leagues based on performance.
-
-![Gold League](./screenshots/4-Gold%20League.png)
-
----
-
-### 🧠 Interactive Quiz
-Learners reinforce concepts through interactive multiple-choice quizzes and receive instant feedback with XP rewards.
-
-![Quiz Learning](./screenshots/5-Quiz%20Learning.png)
-
----
-
-### 🗺️ AI Learning Path
-A structured roadmap that guides learners through AI concepts in sequential modules, unlocking new lessons as they progress.
-
-![Learning Map](./screenshots/6-Learning%20Map.png)
-
----
-
-### 🛂 AI Passport
-The digital AI Passport showcases learner achievements, earned stamps, progress level, and milestone badges.
-
-![Passport](./screenshots/2-%20Passport.png)
----
-├── screenshots/
-│   ├── 1-Prompt Coach.png
-│   ├── 2- Passport.png
-│   ├── 3-Main.png
-│   ├── 4-Gold League.png
-│   ├── 5-Quiz Learning.png
-│   ├── 6-Learning Map.png
-│   └── 7-Main.png
+<img width="1920" height="1080" alt="7- Main" src="https://github.com/user-attachments/assets/c71c263f-60dc-4115-bdb4-d466c4797add" />
 
 ## 🚀 Getting Started Locally
 
