@@ -1,0 +1,1243 @@
+{
+  "units": [
+    {
+      "id": "unit-1",
+      "title": "Unit 1: What is AI Really?",
+      "description": "Demystify AI, Machine Learning, Tokens, Context Windows, and Hallucinations.",
+      "icon": "Bot",
+      "color": "from-cyan-500 to-blue-600",
+      "xpReward": 250,
+      "stampId": "stamp-ai-explorer",
+      "stampTitle": "AI Explorer",
+      "stampDescription": "Mastered the core mechanics of AI, LLMs, and Tokenization.",
+      "lessons": [
+        {
+          "id": "u1-l1",
+          "unitId": "unit-1",
+          "title": "AI vs Human Intelligence",
+          "description": "Learn what Artificial Intelligence is—and what it isn't.",
+          "icon": "Brain",
+          "xpReward": 50,
+          "estimatedMinutes": 4,
+          "questions": [
+            {
+              "id": "u1-l1-q1",
+              "type": "multiple-choice",
+              "question": "What is Artificial Intelligence (AI) at its core?",
+              "choices": [
+                "A conscious digital mind that thinks like a human",
+                "Computer systems designed to perform tasks that typically require human intelligence",
+                "A giant database that remembers every website on the internet",
+                "A magic search engine that writes code automatically"
+              ],
+              "answer": 1,
+              "explanation": "AI refers to computer systems engineered to recognize patterns, make decisions, and process language—simulating capabilities previously limited to human minds.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l1-q2",
+              "type": "true-false",
+              "question": "True or False: Generative AI models genuinely feel emotions and possess self-awareness.",
+              "choices": ["True", "False"],
+              "answer": 1,
+              "explanation": "Generative AI models are mathematical pattern matchers. They predict output based on probability, without feeling, consciousness, or personal beliefs.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l1-q3",
+              "type": "spot-mistake",
+              "question": "Identify the flawed statement in this student's summary:",
+              "scenario": "\"AI models understand the meaning of life because they have read every philosophy book written.\"",
+              "choices": [
+                "AI cannot read philosophy books at all",
+                "Reading text gives AI statistical word patterns, not true conscious comprehension or understanding",
+                "AI is only used for math calculations",
+                "Philosophy books are kept secret from AI training"
+              ],
+              "answer": 1,
+              "explanation": "Processing text allows AI to predict related words with high accuracy, but it does not equate to human-like sentience or true comprehension.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l1-q4",
+              "type": "fill-prompt",
+              "question": "Complete the statement about AI capabilities:",
+              "codeOrPrompt": "AI excels at rapid pattern recognition and text generation, but humans excel at genuine ____ and empathy.",
+              "choices": ["calculator speed", "critical reasoning", "data storage", "pixel display"],
+              "answer": 1,
+              "explanation": "Critical reasoning, ethical judgment, and emotional empathy remain uniquely human strengths that complement AI tools.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l1-q5",
+              "type": "multiple-choice",
+              "question": "Which of these is the best description of Generative AI?",
+              "choices": [
+                "Software that copies and pastes existing Wikipedia articles",
+                "AI models capable of creating new content like text, code, images, and audio based on learned patterns",
+                "A physical robot that cleans houses",
+                "An algorithm that strictly filters spam emails"
+              ],
+              "answer": 1,
+              "explanation": "Generative AI generates brand-new original media (text, music, images, code) by predicting plausible sequences learned from vast datasets.",
+              "xp": 10,
+              "difficulty": "easy"
+            }
+          ]
+        },
+        {
+          "id": "u1-l2",
+          "unitId": "unit-1",
+          "title": "Machine Learning & LLMs",
+          "description": "Discover how Large Language Models learn from massive text datasets.",
+          "icon": "Cpu",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u1-l2-q1",
+              "type": "multiple-choice",
+              "question": "What does 'LLM' stand for in modern AI?",
+              "choices": [
+                "Linear Logic Machine",
+                "Large Language Model",
+                "Linked Learning Matrix",
+                "Logic Language Method"
+              ],
+              "answer": 1,
+              "explanation": "LLM stands for Large Language Model—a deep learning model trained on vast amounts of text to understand and generate human language.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l2-q2",
+              "type": "multiple-choice",
+              "question": "How does an LLM decide which word comes next when writing a response?",
+              "choices": [
+                "It looks up an exact pre-written answer in its memory bank",
+                "It calculates the highest statistical probability for the next piece of text based on its training",
+                "It rolls a random digital dice with no logic",
+                "It asks a human operator in real time"
+              ],
+              "answer": 1,
+              "explanation": "LLMs predict the most likely next token (word or word fragment) given all the preceding text in the prompt and conversation context.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l2-q3",
+              "type": "true-false",
+              "question": "True or False: Machine Learning models require explicit step-by-step programming for every single answer.",
+              "choices": ["True", "False"],
+              "answer": 1,
+              "explanation": "Unlike traditional software with hardcoded rules, Machine Learning algorithms learn patterns directly from example data.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l2-q4",
+              "type": "spot-mistake",
+              "question": "Spot the common misconception about LLMs:",
+              "scenario": "\"Gemini is connected directly to my brain and knows what I am thinking before I type.\"",
+              "choices": [
+                "Gemini requires keyboard or voice input and processes text signals, not brainwaves",
+                "Gemini uses satellite radar to read minds",
+                "LLMs only work when plugged into power outlets",
+                "Gemini is a physical entity that stands next to you"
+              ],
+              "answer": 0,
+              "explanation": "LLMs only process explicit input provided through text, audio, or image prompts.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l2-q5",
+              "type": "prompt-rewrite",
+              "question": "Which sentence best explains 'Machine Learning' to a 10-year-old?",
+              "choices": [
+                "Machine learning is gradient descent over high-dimensional tensor weights.",
+                "Machine learning is teaching a computer by showing it thousands of examples instead of writing rigid rules.",
+                "Machine learning is storing files on a cloud drive.",
+                "Machine learning is installing updates on your smartphone."
+              ],
+              "answer": 1,
+              "explanation": "Comparing ML to learning from examples is clear, relatable, and accurate without overwhelming technical jargon.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u1-l3",
+          "unitId": "unit-1",
+          "title": "Tokens & Context Window",
+          "description": "Understand how AI breaks down text and how much memory it can retain.",
+          "icon": "Layers",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u1-l3-q1",
+              "type": "multiple-choice",
+              "question": "What is a 'Token' in the context of Large Language Models?",
+              "choices": [
+                "A physical coin used to pay for AI services",
+                "A basic chunk of text (like a word, part of a word, or punctuation) processed by the model",
+                "A security password used to login to AI apps",
+                "A digital image generated by DALL-E"
+              ],
+              "answer": 1,
+              "explanation": "Tokens are the fundamental building blocks of AI language processing. In English, 1 token is roughly 4 characters or 0.75 words.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l3-q2",
+              "type": "multiple-choice",
+              "question": "What is an AI's 'Context Window'?",
+              "choices": [
+                "The size of the chat box on your laptop screen",
+                "The maximum amount of tokens (prompt + history) the AI can consider at one time",
+                "The time of day when AI servers run fastest",
+                "The brightness setting of your AI application"
+              ],
+              "answer": 1,
+              "explanation": "The context window is the AI's short-term working memory capacity. Anything outside this limit is forgotten or truncated.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l3-q3",
+              "type": "true-false",
+              "question": "True or False: If a conversation exceeds the context window limit, the AI may forget details mentioned earlier in the chat.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "When context limits are reached, earlier messages fall out of the active window, causing the AI to lose track of earlier constraints.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l3-q4",
+              "type": "fill-prompt",
+              "question": "Estimate token usage:",
+              "codeOrPrompt": "A paragraph of 100 English words will typically equal roughly ____ tokens for an AI model.",
+              "choices": ["10", "130-140", "1000", "5000"],
+              "answer": 1,
+              "explanation": "As a rule of thumb, 100 English words equal approximately 130 to 140 tokens because long words and punctuation get split into multiple tokens.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l3-q5",
+              "type": "order-steps",
+              "question": "Arrange how AI processes a user's prompt in order:",
+              "choices": [
+                "User sends text prompt",
+                "Text is converted into numerical tokens",
+                "Model calculates probability for response tokens",
+                "Tokens are converted back into human-readable words"
+              ],
+              "answer": [
+                "User sends text prompt",
+                "Text is converted into numerical tokens",
+                "Model calculates probability for response tokens",
+                "Tokens are converted back into human-readable words"
+              ],
+              "explanation": "This pipeline—Tokenization -> Statistical Processing -> Detokenization—is how all modern transformer-based LLMs operate.",
+              "xp": 20,
+              "difficulty": "hard"
+            }
+          ]
+        },
+        {
+          "id": "u1-l4",
+          "unitId": "unit-1",
+          "title": "Training & Inference",
+          "description": "Learn the difference between training an AI model and running inference.",
+          "icon": "Zap",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u1-l4-q1",
+              "type": "multiple-choice",
+              "question": "What happens during the 'Training' phase of an AI model?",
+              "choices": [
+                "The AI chats live with millions of users every second",
+                "The model processes massive datasets over weeks to adjust billions of internal connections (weights)",
+                "Engineers manually write answers to every question in the world",
+                "The computer downloads new RAM memory from the internet"
+              ],
+              "answer": 1,
+              "explanation": "Training is the computationally heavy phase where a model learns language patterns from massive datasets.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l4-q2",
+              "type": "multiple-choice",
+              "question": "What does 'Inference' mean when using AI?",
+              "choices": [
+                "Searching the web for news stories",
+                "The process where a trained model generates an answer to a user's specific prompt",
+                "Deleting old AI models from cloud servers",
+                "Translating code from Python to JavaScript"
+              ],
+              "answer": 1,
+              "explanation": "Inference is the live execution phase—when you type a prompt into Gemini and receive a generated response in real time.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l4-q3",
+              "type": "true-false",
+              "question": "True or False: Every time you ask Gemini a question, it updates its base core training weights permanently.",
+              "choices": ["True", "False"],
+              "answer": 1,
+              "explanation": "Standard inference is read-only. Chat responses use existing weights and context memory without modifying the base model weights on the fly.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l4-q4",
+              "type": "fill-prompt",
+              "question": "Identify the key term:",
+              "codeOrPrompt": "A model's knowledge cutoff date refers to the moment its ____ dataset was finalized.",
+              "choices": ["Inference", "Training", "Tokenization", "Web Browsing"],
+              "answer": 1,
+              "explanation": "An AI's baseline knowledge ends at its training data cutoff date unless supplemented with real-time tools like Google Search.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l4-q5",
+              "type": "spot-mistake",
+              "question": "Spot the inaccurate technical claim:",
+              "scenario": "\"I trained a model locally on my laptop by typing 3 messages into ChatGPT last night.\"",
+              "choices": [
+                "3 messages in chat is inference context, not full model weight pre-training",
+                "ChatGPT runs on smartphones, not laptops",
+                "Chat messages convert to images automatically",
+                "Models can only be trained during full moons"
+              ],
+              "answer": 0,
+              "explanation": "Providing chat examples sets short-term context during inference. Pre-training models requires thousands of GPUs and petabytes of data.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u1-l5",
+          "unitId": "unit-1",
+          "title": "Hallucinations & Limitations",
+          "description": "Recognize why AI makes up facts and how to spot errors.",
+          "icon": "AlertTriangle",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u1-l5-q1",
+              "type": "multiple-choice",
+              "question": "What is an 'AI Hallucination'?",
+              "choices": [
+                "When the AI generates colorful artwork",
+                "When an AI confidently presents incorrect or fabricated information as factual truth",
+                "When the server crashes due to high traffic",
+                "When the AI refuses to answer a question"
+              ],
+              "answer": 1,
+              "explanation": "Hallucination happens because LLMs predict plausible-sounding text patterns rather than looking up verified truth databases.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l5-q2",
+              "type": "spot-mistake",
+              "question": "Which of the following is a classic AI hallucination risk?",
+              "choices": [
+                "Asking the AI to summarize a provided article text",
+                "Asking the AI to invent a fiction story about a dragon",
+                "Asking the AI for exact legal citations or historical quotes without providing source material",
+                "Asking the AI to translate 'Hello' to Spanish"
+              ],
+              "answer": 2,
+              "explanation": "Asking for specific citations, statistics, or quotes from memory often leads to realistic-looking but fabricated references.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l5-q3",
+              "type": "true-false",
+              "question": "True or False: If an AI states a fact in a confident, authoritative tone, it is guaranteed to be 100% accurate.",
+              "choices": ["True", "False"],
+              "answer": 1,
+              "explanation": "AI models match tone patterns learned from professional text, sounding equally confident whether they are correct or hallucinating.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u1-l5-q4",
+              "type": "prompt-rewrite",
+              "question": "What is the best strategy to prevent AI hallucinations when doing research?",
+              "choices": [
+                "Tell the AI: 'Never lie to me under any circumstances.'",
+                "Provide reliable reference documents and ask the AI to restrict answers strictly to the provided text",
+                "Ask the same question 50 times in a row",
+                "Type the prompt in ALL CAPS"
+              ],
+              "answer": 1,
+              "explanation": "Grounding the AI in verified source material (RAG or document context) drastically reduces fabricated answers.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u1-l5-q5",
+              "type": "multiple-choice",
+              "question": "What is the Golden Rule of AI Literacy when using AI for important tasks?",
+              "choices": [
+                "Trust everything the AI says without checking",
+                "Verify critical facts, statistics, and sources independently",
+                "Only use AI between 9am and 5pm",
+                "Never share your name with an AI model"
+              ],
+              "answer": 1,
+              "explanation": "Always verify high-stakes information (medical, financial, legal, academic) with authoritative primary sources.",
+              "xp": 10,
+              "difficulty": "easy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-2",
+      "title": "Unit 2: Prompt Engineering Fundamentals",
+      "description": "Learn to write clear, structured, contextual prompts that get exceptional results.",
+      "icon": "MessageSquare",
+      "color": "from-indigo-500 to-purple-600",
+      "xpReward": 250,
+      "stampId": "stamp-prompt-pilot",
+      "stampTitle": "Prompt Pilot",
+      "stampDescription": "Mastered clear instructions, context, constraints, and few-shot examples.",
+      "lessons": [
+        {
+          "id": "u2-l1",
+          "unitId": "unit-2",
+          "title": "Anatomy of a Perfect Prompt",
+          "description": "Discover the 4 key building blocks of every effective prompt.",
+          "icon": "FileCode",
+          "xpReward": 50,
+          "estimatedMinutes": 4,
+          "questions": [
+            {
+              "id": "u2-l1-q1",
+              "type": "multiple-choice",
+              "question": "Which 4 elements make up a highly effective prompt structure?",
+              "choices": [
+                "Greeting, Sign-off, Password, Link",
+                "Task Instruction, Context, Constraints, Output Format",
+                "Code, Database, Server, API Key",
+                "Title, Header, Footer, Page Number"
+              ],
+              "answer": 1,
+              "explanation": "Providing a clear Task, relevant Context, boundaries (Constraints), and desired Format yields superior AI responses.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l1-q2",
+              "type": "prompt-rewrite",
+              "question": "Which prompt is significantly better for getting a good email draft?",
+              "choices": [
+                "Write an email about the project meeting.",
+                "Draft a polite 3-paragraph email to my manager updating her on the Website Redesign project. Mention we finished design mockups and need approval by Thursday.",
+                "Send an email to my team right now.",
+                "Email project updates quickly."
+              ],
+              "answer": 1,
+              "explanation": "The second prompt clearly defines audience (manager), tone (polite), length (3 paragraphs), key details (finished mockups), and deadline constraint (Thursday).",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l1-q3",
+              "type": "spot-mistake",
+              "question": "Spot the weakness in this prompt: 'Explain climate change.'",
+              "choices": [
+                "It uses the word climate",
+                "It lacks target audience, length, focus area, and output tone",
+                "It is typed in English",
+                "It contains punctuation"
+              ],
+              "answer": 1,
+              "explanation": "Vague prompts produce generic, encyclopedia-style answers. Specify whether you want a 5th-grade explanation, bullet points, or scientific summary.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l1-q4",
+              "type": "true-false",
+              "question": "True or False: Adding politeness like 'Please' and 'Thank you' improves AI accuracy mathematically.",
+              "choices": ["True", "False"],
+              "answer": 1,
+              "explanation": "While friendly language sets a pleasant tone in training data, clarity and specific instructions matter far more than social niceties.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l1-q5",
+              "type": "fill-prompt",
+              "question": "Fill in the missing prompt element:",
+              "codeOrPrompt": "Task: Summarize article. Context: For busy executives. Constraint: ____.",
+              "choices": ["Use bullet points under 100 words", "Make it extremely long", "Write in French", "Add random emojis"],
+              "answer": 0,
+              "explanation": "Setting length and structural constraints prevents rambling outputs and saves reading time.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u2-l2",
+          "unitId": "unit-2",
+          "title": "Providing Context & Role",
+          "description": "Guide the AI by assigning expert roles and background detail.",
+          "icon": "UserCheck",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u2-l2-q1",
+              "type": "multiple-choice",
+              "question": "What is 'Role Prompting'?",
+              "choices": [
+                "Asking the AI to play an actor in a movie script",
+                "Instructing the AI to adopt a specific persona or expert perspective (e.g., 'Act as a Senior UX Designer')",
+                "Changing your profile picture on the AI app",
+                "Assigning admin permissions to the AI"
+              ],
+              "answer": 1,
+              "explanation": "Assigning a role steers the AI toward specialized vocabulary, analytical depth, and industry standards learned during training.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l2-q2",
+              "type": "prompt-rewrite",
+              "question": "Select the strongest role-based prompt for feedback on a resume:",
+              "choices": [
+                "Look at my resume.",
+                "Act as an expert Tech Recruiter. Review my resume summary for a Staff Software Engineer position and suggest 3 high-impact improvements using bullet points.",
+                "Is my resume good?",
+                "Fix all spelling mistakes on my resume."
+              ],
+              "answer": 1,
+              "explanation": "Specifying the role (Tech Recruiter), target position (Staff Engineer), and precise deliverable (3 high-impact improvements) yields actionable feedback.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l2-q3",
+              "type": "true-false",
+              "question": "True or False: Providing background context helps the AI tailor its answer to your specific situation.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "Without context, AI relies on average assumptions. Context grounds the answer in your specific goals and audience.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l2-q4",
+              "type": "spot-mistake",
+              "question": "What is missing from this prompt? 'Act as a nutritionist and make a meal plan.'",
+              "choices": [
+                "Nothing, it is 100% complete",
+                "Dietary restrictions, health goals, calorie needs, and timeline duration",
+                "The word 'Abracadabra'",
+                "A computer virus scan"
+              ],
+              "answer": 1,
+              "explanation": "A meal plan requires key context parameters like allergies, budget, calories, and duration to be safe and helpful.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l2-q5",
+              "type": "fill-prompt",
+              "question": "Complete the role prompt formula:",
+              "codeOrPrompt": "Act as an experienced ____. My target audience is ____. Please explain ____ in 3 simple steps.",
+              "choices": ["Teacher / 10-year-olds / photosynthesis", "Computer / printers / paper", "Database / SQL / server", "Window / glass / frames"],
+              "answer": 0,
+              "explanation": "Matching the role to the target audience creates a perfectly calibrated explanation.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u2-l3",
+          "unitId": "unit-2",
+          "title": "Setting Clear Constraints",
+          "description": "Control length, style, tone, and negative constraints effectively.",
+          "icon": "Sliders",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u2-l3-q1",
+              "type": "multiple-choice",
+              "question": "Why are constraints crucial in prompt engineering?",
+              "choices": [
+                "They slow down the server so it costs less money",
+                "They prevent rambling answers and ensure the output matches your formatting and tone requirements",
+                "They force the AI to turn off security guards",
+                "They make the prompt look like code"
+              ],
+              "answer": 1,
+              "explanation": "Constraints set boundary parameters (word count, tone, banned phrases, structure) that guide the AI's generation.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l3-q2",
+              "type": "spot-mistake",
+              "question": "What is a 'Negative Constraint' in prompting?",
+              "choices": [
+                "Insulting the AI in the prompt text",
+                "Explicitly telling the AI what NOT to include (e.g., 'Do not use buzzwords like synergy or leverage')",
+                "Writing prompts when you are in a bad mood",
+                "Deleting bad prompts from history"
+              ],
+              "answer": 1,
+              "explanation": "Negative constraints explicitly ban specific undesirable behaviors, terms, or formats.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l3-q3",
+              "type": "prompt-rewrite",
+              "question": "Which constraint instruction is most effective for a summary task?",
+              "choices": [
+                "Make it brief.",
+                "Summarize the text into exactly 3 bullet points, keeping the total response under 60 words. Do not include intro banter.",
+                "Don't write too much text please.",
+                "Write a short paragraph or whatever."
+              ],
+              "answer": 1,
+              "explanation": "Quantitative constraints (3 bullet points, under 60 words, no intro banter) give the model clear measurable goals.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l3-q4",
+              "type": "true-false",
+              "question": "True or False: Positive framing ('Do X') is generally more reliable than negative framing ('Don't do Y') in prompts.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "AI models focus on key nouns. Saying 'Keep explanation under 5 sentences' works better than 'Do not write long text'.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l3-q5",
+              "type": "fill-prompt",
+              "question": "Identify the constraint type:",
+              "codeOrPrompt": "Constraint: 'Format response as a markdown table with columns: [Feature | Pros | Cons]'. This is a ____ constraint.",
+              "choices": ["Structural", "Negative", "Temporal", "Emotional"],
+              "answer": 0,
+              "explanation": "Structural constraints dictate the visual and syntactic layout of the generated text.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u2-l4",
+          "unitId": "unit-2",
+          "title": "The Power of Examples (Few-Shot)",
+          "description": "Show, don't just tell! Use zero-shot, one-shot, and few-shot examples.",
+          "icon": "Copy",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u2-l4-q1",
+              "type": "multiple-choice",
+              "question": "What is 'Few-Shot Prompting'?",
+              "choices": [
+                "Asking 3 questions in a single second",
+                "Providing a few input-output examples in your prompt so the AI learns the exact pattern",
+                "Taking screenshots of AI responses",
+                "Running a prompt only 2 times"
+              ],
+              "answer": 1,
+              "explanation": "Few-shot prompting shows the model concrete examples of desired input -> output pairs, dramatically reducing errors.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l4-q2",
+              "type": "multiple-choice",
+              "question": "What is 'Zero-Shot Prompting'?",
+              "choices": [
+                "Giving a prompt with zero instructions",
+                "Asking the AI to perform a task directly without providing any prior example demonstrations",
+                "Deleting all chat history before asking",
+                "Using an AI model with zero parameters"
+              ],
+              "answer": 1,
+              "explanation": "Zero-shot relies purely on the AI's pre-trained knowledge without showing custom examples.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l4-q3",
+              "type": "spot-mistake",
+              "question": "Identify why this few-shot prompt works so well:",
+              "scenario": "\"Convert product names to SKU codes:\nInput: Wireless Headphones -> Output: SK-WIR-01\nInput: Solar Charger -> Output: SK-SOL-02\nInput: Smart Watch -> Output:\"",
+              "choices": [
+                "It teaches the exact naming convention and pattern visually",
+                "It uses color highlighting",
+                "It is written in Python code",
+                "It uses complex calculus equations"
+              ],
+              "answer": 0,
+              "explanation": "Showing pattern structure (prefix-category-number) guides the model to produce 'SK-SMA-03' effortlessly.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l4-q4",
+              "type": "true-false",
+              "question": "True or False: Few-shot examples are especially effective for complex formatting and custom taxonomy tasks.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "Examples eliminate ambiguity when defining complex JSON schema, specialized classifications, or unusual writing styles.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l4-q5",
+              "type": "order-steps",
+              "question": "Order the steps to build a Few-Shot Sentiment Classifier prompt:",
+              "choices": [
+                "Define the Task: Classify customer review sentiment",
+                "Example 1: 'Loved the fast shipping!' -> Sentiment: Positive",
+                "Example 2: 'Arrived broken and late.' -> Sentiment: Negative",
+                "New Target Input: 'Product is okay, but box was damaged.' -> Sentiment:"
+              ],
+              "answer": [
+                "Define the Task: Classify customer review sentiment",
+                "Example 1: 'Loved the fast shipping!' -> Sentiment: Positive",
+                "Example 2: 'Arrived broken and late.' -> Sentiment: Negative",
+                "New Target Input: 'Product is okay, but box was damaged.' -> Sentiment:"
+              ],
+              "explanation": "Task -> Demonstration 1 -> Demonstration 2 -> Target Query is the canonical structure for few-shot prompting.",
+              "xp": 20,
+              "difficulty": "hard"
+            }
+          ]
+        },
+        {
+          "id": "u2-l5",
+          "unitId": "unit-2",
+          "title": "Iterative Refinement & Follow-ups",
+          "description": "Treat prompting as a conversation. Refine, critique, and improve.",
+          "icon": "Repeat",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u2-l5-q1",
+              "type": "multiple-choice",
+              "question": "What should you do if an AI's initial response is slightly off target?",
+              "choices": [
+                "Give up immediately and assume AI cannot do the task",
+                "Provide a follow-up refinement prompt pointing out specific adjustments needed",
+                "Re-type the exact same prompt 10 times",
+                "Complain on social media"
+              ],
+              "answer": 1,
+              "explanation": "Prompting is iterative! Refining through multi-turn follow-ups allows you to guide the output closer to perfection.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l5-q2",
+              "type": "prompt-rewrite",
+              "question": "Select the best follow-up prompt to improve an overly technical summary:",
+              "choices": [
+                "Bad answer.",
+                "Great summary! Now simplify the language so a non-technical manager can understand it. Replace jargon with real-world analogies.",
+                "Start over from scratch.",
+                "Why did you write that?"
+              ],
+              "answer": 1,
+              "explanation": "Acknowledging what worked while giving clear direction on tone/simplicity achieves immediate results.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l5-q3",
+              "type": "spot-mistake",
+              "question": "Spot the powerful follow-up technique known as 'Self-Correction':",
+              "choices": [
+                "Asking the AI: 'Review your previous answer for potential errors or logical flaws, then output a corrected version.'",
+                "Deleting your original prompt and closing the browser tab",
+                "Telling the AI that it passed an exam",
+                "Asking the AI what time it is"
+              ],
+              "answer": 0,
+              "explanation": "Prompting the AI to critique its own work activates self-evaluation patterns that catch subtle mistakes.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u2-l5-q4",
+              "type": "true-false",
+              "question": "True or False: It is often better to break a huge complex task into 3 sequential conversational steps than asking for everything in one massive prompt.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "Decomposing complex work into step-by-step subtasks maintains accuracy and prevents the model from missing requirements.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u2-l5-q5",
+              "type": "fill-prompt",
+              "question": "Complete the effective follow-up prompt template:",
+              "codeOrPrompt": "Keep the content from section 1, but make section 2 more ____ and convert section 3 into a ____ table.",
+              "choices": ["concise / 2-column", "loud / square", "random / hidden", "invisible / colorful"],
+              "answer": 0,
+              "explanation": "Targeted feedback preserves good parts while specifying precise formatting upgrades.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-3",
+      "title": "Unit 3: Advanced Prompting & Strategy",
+      "description": "Master System Prompts, Chain-of-Thought, Output Schemas, and Complex Decomposition.",
+      "icon": "Award",
+      "color": "from-violet-600 to-fuchsia-600",
+      "xpReward": 300,
+      "stampId": "stamp-ai-builder",
+      "stampTitle": "AI Architect",
+      "stampDescription": "Mastered system instructions, chain-of-thought, and output schemas.",
+      "lessons": [
+        {
+          "id": "u3-l1",
+          "unitId": "unit-3",
+          "title": "System vs User Instructions",
+          "description": "Learn how developers steer AI guardrails and persona behavior.",
+          "icon": "Shield",
+          "xpReward": 60,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u3-l1-q1",
+              "type": "multiple-choice",
+              "question": "What is the primary role of a 'System Instruction' in AI development?",
+              "choices": [
+                "To display pop-up ads in the app",
+                "To set high-level rules, persona, boundaries, and formatting instructions that govern the AI's behavior across all user turns",
+                "To restart the server if it gets too hot",
+                "To charge credit cards for tokens"
+              ],
+              "answer": 1,
+              "explanation": "System instructions establish foundational rules and behavioral guardrails prior to receiving user input.",
+              "xp": 12,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l1-q2",
+              "type": "multiple-choice",
+              "question": "How does a 'User Prompt' differ from a 'System Instruction'?",
+              "choices": [
+                "User prompts are written in code, system instructions are written in English",
+                "System instructions define global rules; User prompts contain specific runtime inputs and user queries",
+                "User prompts are secret and invisible",
+                "There is no difference between them"
+              ],
+              "answer": 1,
+              "explanation": "System instructions guide the overall assistant persona, while User prompts supply dynamic questions and data.",
+              "xp": 12,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l1-q3",
+              "type": "true-false",
+              "question": "True or False: Well-crafted System Instructions help prevent AI from breaking character or violating safety boundaries.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "System instructions provide strong guardrails that prioritize developer specifications over adversarial user inputs.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l1-q4",
+              "type": "spot-mistake",
+              "question": "Which of these is the best example of a System Instruction for a Customer Support Bot?",
+              "choices": [
+                "Hi, I want a refund for order #1234.",
+                "You are a calm, professional customer support agent for Acme Cloud. Answer user questions strictly using Acme policy docs. Never ask for credit card numbers.",
+                "Where is my package?",
+                "Tell me a joke about dogs."
+              ],
+              "answer": 1,
+              "explanation": "The second option sets persona (calm agent), company context (Acme Cloud), policy boundaries, and explicit safety constraints.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l1-q5",
+              "type": "fill-prompt",
+              "question": "Complete the developer system instruction:",
+              "codeOrPrompt": "System Instruction: 'Always respond in valid ____ format. Do not enclose in markdown blocks.'",
+              "choices": ["JSON", "MP3", "PNG", "JPEG"],
+              "answer": 0,
+              "explanation": "JSON system instructions allow software backends to parse AI responses automatically.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u3-l2",
+          "unitId": "unit-3",
+          "title": "Chain-of-Thought Reasoning",
+          "description": "Unlock advanced problem solving by encouraging step-by-step reasoning.",
+          "icon": "GitBranch",
+          "xpReward": 60,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u3-l2-q1",
+              "type": "multiple-choice",
+              "question": "What is 'Chain-of-Thought' (CoT) prompting?",
+              "choices": [
+                "Linking multiple physical computers together with chains",
+                "Asking the AI to break down complex logic step-by-step before arriving at a final answer",
+                "Generating a chain of random words",
+                "Translating text into 5 languages sequentially"
+              ],
+              "answer": 1,
+              "explanation": "Prompting 'Think step-by-step' forces the model to generate intermediate reasoning tokens, significantly boosting math and logic accuracy.",
+              "xp": 12,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l2-q2",
+              "type": "prompt-rewrite",
+              "question": "Which phrase is famous for triggering Chain-of-Thought reasoning in AI?",
+              "choices": [
+                "Give me the answer right now!",
+                "Let's think step by step.",
+                "Don't explain anything.",
+                "Guess the answer quickly."
+              ],
+              "answer": 1,
+              "explanation": "The magic phrase 'Let's think step by step' encourages the transformer model to allocate token space for deliberate logical steps.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l2-q3",
+              "type": "spot-mistake",
+              "question": "Why does Chain-of-Thought improve math and logic performance?",
+              "choices": [
+                "It downloads a scientific calculator into memory",
+                "It allows the model to compute intermediate state tokens instead of jumping directly to a final token guess",
+                "It speeds up internet connection",
+                "It lowers screen brightness"
+              ],
+              "answer": 1,
+              "explanation": "Since LLMs predict one token at a time, writing out intermediate calculation steps gives future tokens necessary context.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l2-q4",
+              "type": "true-false",
+              "question": "True or False: In production user applications, you can instruct the AI to perform reasoning internally and present only the clean final summary to the user.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "You can use system instructions or response schemas to separate internal reasoning steps from user-facing responses.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l2-q5",
+              "type": "order-steps",
+              "question": "Order the logical steps for a CoT Word Problem solver:",
+              "choices": [
+                "Identify given variables from problem statement",
+                "Write down formula or relationship equations",
+                "Calculate intermediate subtotals step-by-step",
+                "State final verified conclusion"
+              ],
+              "answer": [
+                "Identify given variables from problem statement",
+                "Write down formula or relationship equations",
+                "Calculate intermediate subtotals step-by-step",
+                "State final verified conclusion"
+              ],
+              "explanation": "Following systematic problem-solving phases eliminates compounding calculation errors.",
+              "xp": 20,
+              "difficulty": "hard"
+            }
+          ]
+        },
+        {
+          "id": "u3-l3",
+          "unitId": "unit-3",
+          "title": "Formatting AI Outputs",
+          "description": "Master structured outputs: Markdown tables, JSON, Lists, and Codes.",
+          "icon": "Grid",
+          "xpReward": 60,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u3-l3-q1",
+              "type": "multiple-choice",
+              "question": "Why request JSON or Markdown format from an AI?",
+              "choices": [
+                "Because AI cannot write normal sentences",
+                "Structured formats make data clean, scannable, and easy for software apps or spreadsheets to process",
+                "It makes the text print faster on paper",
+                "It reduces internet data usage"
+              ],
+              "answer": 1,
+              "explanation": "Structured formats allow programmatic parsing by frontend components, databases, and automated workflows.",
+              "xp": 12,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l3-q2",
+              "type": "prompt-rewrite",
+              "question": "Select the best prompt to request comparison data for 3 laptops:",
+              "choices": [
+                "Compare 3 laptops.",
+                "Create a Markdown table comparing MacBook Air M3, Dell XPS 13, and Lenovo ThinkPad X1. Use columns: [Model | Price | Battery Life | Best For].",
+                "Tell me which laptop is best in a big paragraph.",
+                "Write laptop names."
+              ],
+              "answer": 1,
+              "explanation": "Specifying Markdown table format with exact column names guarantees a clean, side-by-side comparison.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l3-q3",
+              "type": "true-false",
+              "question": "True or False: Providing a target JSON schema in your prompt helps ensure the AI generates valid keys and data types.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "Defining a key-value schema prevents missing fields and inconsistent formatting.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l3-q4",
+              "type": "spot-mistake",
+              "question": "Spot the issue in this prompt request: 'Give me JSON data but write conversational paragraphs before and after it.'",
+              "choices": [
+                "Conversational fluff will break automated JSON parsers (`JSON.parse()`) unless isolated cleanly",
+                "JSON cannot contain numbers",
+                "Conversational text is illegal on web servers",
+                "AI cannot generate JSON"
+              ],
+              "answer": 0,
+              "explanation": "When building API integrations, instruct the AI: 'Output raw JSON only. Do not wrap in markdown or conversational text.'",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l3-q5",
+              "type": "fill-prompt",
+              "question": "Complete the output format constraint:",
+              "codeOrPrompt": "Format: Provide output as a bulleted checklist where each item starts with an emoji and a bold ____.",
+              "choices": ["Header Title", "Page Number", "Random Number", "Secret Code"],
+              "answer": 0,
+              "explanation": "Combining visual elements (emojis + bold headers) creates readable executive summaries.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u3-l4",
+          "unitId": "unit-3",
+          "title": "Spotting AI Hallucinations",
+          "description": "Develop critical auditing skills to verify AI claims and code.",
+          "icon": "Eye",
+          "xpReward": 60,
+          "estimatedMinutes": 5,
+          "questions": [
+            {
+              "id": "u3-l4-q1",
+              "type": "spot-mistake",
+              "question": "Read this AI-generated biography sentence and spot the red flag:",
+              "scenario": "\"Albert Einstein won the 1921 Nobel Prize in Physics for inventing the iPhone in Zurich.\"",
+              "choices": [
+                "The year 1921 is incorrect",
+                "Einstein winning for inventing the iPhone is anachronistic and false (he won for the photoelectric effect)",
+                "Zurich is not a real city",
+                "Physics does not exist"
+              ],
+              "answer": 1,
+              "explanation": "LLMs can combine real entities (Einstein, Nobel Prize, iPhone) into absurd, plausible-sounding historical fabrications.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l4-q2",
+              "type": "multiple-choice",
+              "question": "Which type of query carries the HIGHEST risk of AI hallucination?",
+              "choices": [
+                "Summarizing text pasted directly into the prompt",
+                "Asking for specific hyper-niche academic citations, URLs, or precise legal case numbers from memory",
+                "Translating simple phrases into French",
+                "Formatting a list of names alphabetically"
+              ],
+              "answer": 1,
+              "explanation": "Fabricating realistic-looking citations, book titles, and web URLs is one of the most common LLM hallucination patterns.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l4-q3",
+              "type": "true-false",
+              "question": "True or False: Search Grounding (like Google Search in Gemini) helps dramatically reduce hallucinations for real-time events.",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "Grounding queries in live Google Search results provides factual web references to back up generated statements.",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l4-q4",
+              "type": "prompt-rewrite",
+              "question": "What is the best prompt instruction to force the AI to admit when it lacks reliable information?",
+              "choices": [
+                "Always make a guess if you don't know.",
+                "Answer based ONLY on provided sources. If the answer is not in the text, reply strictly with: 'Information not found in source.' Do not extrapolate.",
+                "Try your best to make up something plausible.",
+                "Search your imagination."
+              ],
+              "answer": 1,
+              "explanation": "Giving the model an explicit 'escape hatch' ('Information not found') prevents it from fabricating answers under pressure.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l4-q5",
+              "type": "fill-prompt",
+              "question": "Fill in the audit principle:",
+              "codeOrPrompt": "When using AI for medical, legal, or financial advice, the human must act as the ____-in-the-loop.",
+              "choices": ["Human", "Robot", "Algorithm", "Database"],
+              "answer": 0,
+              "explanation": "The 'Human-in-the-loop' paradigm ensures safety by having a qualified human review and approve AI outputs.",
+              "xp": 15,
+              "difficulty": "medium"
+            }
+          ]
+        },
+        {
+          "id": "u3-l5",
+          "unitId": "unit-3",
+          "title": "Mastering Task Decomposition",
+          "description": "Break massive projects into structured, multi-step AI workflows.",
+          "icon": "Layers",
+          "xpReward": 60,
+          "estimatedMinutes": 6,
+          "questions": [
+            {
+              "id": "u3-l5-q1",
+              "type": "multiple-choice",
+              "question": "What is 'Task Decomposition' in AI prompt engineering?",
+              "choices": [
+                "Deleting tasks from your calendar app",
+                "Breaking down a large, complex objective into smaller, manageable sub-prompts executed in sequence",
+                "Writing prompts in multiple languages at once",
+                "Allowing the computer to turn off automatically"
+              ],
+              "answer": 1,
+              "explanation": "Decomposing complex goals (e.g. 'Build a marketing strategy') into discrete steps (Research -> Outline -> Draft -> Critique) yields higher quality results.",
+              "xp": 12,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l5-q2",
+              "type": "order-steps",
+              "question": "Order the sequence to generate a complete Blog Post with AI:",
+              "choices": [
+                "Prompt 1: Brainstorm 5 engaging article headline ideas based on target topic",
+                "Prompt 2: Create a detailed sub-heading outline for chosen headline",
+                "Prompt 3: Draft content section by section using research facts",
+                "Prompt 4: Review draft for tone, flow, and SEO keywords"
+              ],
+              "answer": [
+                "Prompt 1: Brainstorm 5 engaging article headline ideas based on target topic",
+                "Prompt 2: Create a detailed sub-heading outline for chosen headline",
+                "Prompt 3: Draft content section by section using research facts",
+                "Prompt 4: Review draft for tone, flow, and SEO keywords"
+              ],
+              "explanation": "A multi-stage pipeline produces well-structured, coherent content compared to asking for a whole article in one blind shot.",
+              "xp": 20,
+              "difficulty": "hard"
+            },
+            {
+              "id": "u3-l5-q3",
+              "type": "spot-mistake",
+              "question": "Spot the error in this single prompt attempt: 'Build me a full mobile app, write all code, market it on social media, and get me 1,000 paid users.'",
+              "choices": [
+                "It combines too many distinct strategic, technical, and marketing tasks into one vague request",
+                "Mobile apps are illegal",
+                "Social media does not accept AI text",
+                "It uses the word 'app'"
+              ],
+              "answer": 0,
+              "explanation": "Overloading a single prompt causes shallow, incomplete summaries. Each subtask deserves its own dedicated prompt pipeline.",
+              "xp": 15,
+              "difficulty": "medium"
+            },
+            {
+              "id": "u3-l5-q4",
+              "type": "true-false",
+              "question": "True or False: You have now mastered the fundamentals and advanced techniques of AI Literacy & Prompting!",
+              "choices": ["True", "False"],
+              "answer": 0,
+              "explanation": "Congratulations! By completing these modules, you are well on your way to becoming an AI Literacy Champion!",
+              "xp": 10,
+              "difficulty": "easy"
+            },
+            {
+              "id": "u3-l5-q5",
+              "type": "prompt-rewrite",
+              "question": "Choose the most empowered mindset for your future AI journey:",
+              "choices": [
+                "AI will replace my thinking entirely.",
+                "AI is a powerful co-pilot that amplifies my human creativity, critical thinking, and productivity when guided by great prompts.",
+                "AI is too complicated for regular people.",
+                "I should never use AI tools."
+              ],
+              "answer": 1,
+              "explanation": "Treating AI as a collaborative co-pilot unlocks incredible potential while keeping human wisdom at the helm.",
+              "xp": 20,
+              "difficulty": "easy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
