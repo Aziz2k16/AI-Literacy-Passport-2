@@ -116,7 +116,63 @@
 └── vite.config.ts            # Vite configuration
 ```
 
+## 📸 Application Screenshots
+
+### 🏠 Landing Page
+The landing page introduces the AI Literacy Passport platform, highlighting its mission, key features, and a call-to-action for new learners to begin their AI literacy journey.
+
+![Landing Page](./screenshots/7-Main.png)
+
 ---
+
+### 📚 Learning Dashboard
+The main dashboard displays the learner's daily challenge, AI learning path, progress tracking, and quick access to lessons.
+
+![Learning Dashboard](./screenshots/3-Main.png)
+
+---
+
+### 🤖 AI Prompt Coach
+The Prompt Coach helps users improve prompts using the Gemini API by providing clarity, specificity, context analysis, and an improved prompt suggestion.
+
+![AI Prompt Coach](./screenshots/1-Prompt%20Coach.png)
+
+---
+
+### 🏆 Weekly League & Leaderboard
+A gamified leaderboard where learners compete weekly, earn XP, and progress through different leagues based on performance.
+
+![Gold League](./screenshots/4-Gold%20League.png)
+
+---
+
+### 🧠 Interactive Quiz
+Learners reinforce concepts through interactive multiple-choice quizzes and receive instant feedback with XP rewards.
+
+![Quiz Learning](./screenshots/5-Quiz%20Learning.png)
+
+---
+
+### 🗺️ AI Learning Path
+A structured roadmap that guides learners through AI concepts in sequential modules, unlocking new lessons as they progress.
+
+![Learning Map](./screenshots/6-Learning%20Map.png)
+
+---
+
+### 🛂 AI Passport
+The digital AI Passport showcases learner achievements, earned stamps, progress level, and milestone badges.
+
+![Passport](./screenshots/2-%20Passport.png)
+---
+├── screenshots/
+│   ├── 1-Prompt Coach.png
+│   ├── 2- Passport.png
+│   ├── 3-Main.png
+│   ├── 4-Gold League.png
+│   ├── 5-Quiz Learning.png
+│   ├── 6-Learning Map.png
+│   └── 7-Main.png
 
 ## 🚀 Getting Started Locally
 
