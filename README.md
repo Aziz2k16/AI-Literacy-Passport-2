@@ -10,7 +10,6 @@
 
 ## 🌐 Live Application & Key Links
 
-- **Flagship Gemini Feature (AI Prompt Coach):** [https://ai-literacy-passport-2.vercel.app/prompt-coach](https://ai-literacy-passport-2.vercel.app/prompt-coach)
 - **Official Web App:** [https://ai-literacy-passport-2.vercel.app](https://ai-literacy-passport-2.vercel.app)
 
 ---
